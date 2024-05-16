@@ -4,14 +4,29 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
-            string option =Console.ReadLine();
+            Console.WriteLine("vali 1 või muidu");
 
-            switch(option)
+            string option = Console.ReadLine();
+            if (option == "1")
+            {
+                Case();
+            }
+            else
+            {
+                Console.WriteLine("pole sellist valikut");
+            }
+            
+        }
+        
+        static void Case()
+        {
+            Console.WriteLine("kirjuta 1,2 või 3");
+            string option = Console.ReadLine();
+            switch (option)
             {
                 case "1":
                     Console.WriteLine("case1");
-                   break;
+                    break;
 
                 case "2":
                     Console.WriteLine("case2");
@@ -20,10 +35,10 @@
                 case "3":
                     Console.WriteLine("case3");
                     break;
-
                 default:
-                    Console.WriteLine("slay");
+                    Console.WriteLine("nope");
                     break;
+
             }
         }
     }
