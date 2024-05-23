@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ruudu kuju ja pindala")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4e7bd1c3a7175a5690d956d5ee2684697f3b2053")]
 [assembly: System.Reflection.AssemblyProductAttribute("ruudu kuju ja pindala")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ruudu kuju ja pindala")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
