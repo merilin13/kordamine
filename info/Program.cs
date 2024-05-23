@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("vali 1, 2, 3 või 4");
+            Console.WriteLine("vali 1, 2, 3, 4 või 5");
             string option = Console.ReadLine();
             switch (option)
             {
@@ -131,9 +131,11 @@
         {
             Console.WriteLine("kalkulaator");
             Console.WriteLine("sisesta esimene number");
+            try{   
             float nr1 = float.Parse(Console.ReadLine());
             Console.WriteLine("sisesta tehe");
 
+            Console.WriteLine("+, -, *, / või juur");
             string arvutus = Console.ReadLine();
 
             Console.WriteLine("siseta teine number");
@@ -154,9 +156,14 @@
                 case "*":
                     Mult(nr1, nr2);
                     break;
-                case "juur"
-
+                case "juur":
+                    Ruut(nr1);
                     break;
+            }
+        }
+            catch
+            {
+                Console.Write("Sisestasid numbri asemel tähe");
             }
         }
         static void Add(float nr1, float nr2)
@@ -183,7 +190,7 @@
         }
         static void Ruut(float nr1)
         {
-            float resultmult = Math.Sqrt(nr1);
+            float resultmult = (float)Math.Sqrt(nr1);
             Console.WriteLine("Tulemus: " + resultmult);
         }
     }
