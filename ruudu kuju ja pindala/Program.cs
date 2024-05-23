@@ -16,7 +16,7 @@
             int laius = Convert.ToInt32(Console.ReadLine());
             int pindala = (pikkus * laius);
             Console.WriteLine("Pindala on " + pindala + " midagi midagi.");
-            int ümbermõõt = (pikkus * 2 + laius * 2);
+            int ümbermõõt = (2 * (pikkus + laius));
             Console.WriteLine("Ümbermõõt on " + ümbermõõt + " midagi midagi.");
             for (int row = 1; row <= pikkus; row++)
             {
